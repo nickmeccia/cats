@@ -2,6 +2,8 @@
 // This file is automatically included by javascript_include_tag :defaults
 $(document).ready(function(){
 
+	$('#slide2').hide();
+	$('#slide3').hide();
 	
 
 	
