@@ -5,14 +5,25 @@ $(document).ready(function(){
 	
 
 	
-	$('#show').click(function(){
-		$('#content').show();
+	$('#next1').click(function(){
+		$('#slide2').show();
+		$('#slide1').hide();
+	});
+	
+	
+	$('#next2').click(function(){
+		$('#slide3').show();
+		$('#slide2').hide();
+	});
+	$('#prev2').click(function(){
+		$('#slide1').show();
+		$('#slide2').hide();
 	});
 
-	$('#hide').click(function(){
-		$('#content').hide();
+
+	$('#prev3').click(function(){
+		$('#slide2').show();
+		$('#slide3').hide();
 	});
-
-
 	
 });
