@@ -1,0 +1,48 @@
+body{
+	font-family:helvetica, sans-serif;
+}
+
+#slide1 {
+	width:200px;
+	height:200px;
+	background:#00f7ff;
+	position: absolute;
+}
+
+#slide2 {
+	width:200px;
+	height:200px;
+	background:#de00ff;
+	position: absolute;
+}
+
+#slide3 {
+	width:200px;
+	height:200px;
+	background:#fff000;
+	position: absolute;
+}
+
+#next1 {
+	position:absolute;
+	left:100px;
+	top:180px;
+}
+
+#next2 {
+	position:absolute;
+	left:100px;
+	top:180px;
+}
+
+#prev2 {
+	position:absolute;
+	left:10px;
+	top:180px;
+}
+
+#prev3 {
+	position:absolute;
+	left:10px;
+	top:180px;
+}

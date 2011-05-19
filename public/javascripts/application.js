@@ -8,24 +8,24 @@ $(document).ready(function(){
 
 	
 	$('#next1').click(function(){
-		$('#slide2').show();
-		$('#slide1').hide();
+		$('#slide2').show("slide", { direction: "right" }, 1000);
+		$('#slide1').hide("slide", { direction: "left" }, 1000);
 	});
 	
 	
 	$('#next2').click(function(){
-		$('#slide3').show();
-		$('#slide2').hide();
+		$('#slide3').show("slide", { direction: "right" }, 1000);
+		$('#slide2').hide("slide", { direction: "left" }, 1000);
 	});
 	$('#prev2').click(function(){
-		$('#slide1').show();
-		$('#slide2').hide();
+		$('#slide1').show("slide", { direction: "left" }, 1000);
+		$('#slide2').hide("slide", { direction: "right" }, 1000);
 	});
 
 
 	$('#prev3').click(function(){
-		$('#slide2').show();
-		$('#slide3').hide();
+		$('#slide2').show("slide", { direction: "left" }, 1000);
+		$('#slide3').hide("slide", { direction: "right" }, 1000);
 	});
 	
 });
