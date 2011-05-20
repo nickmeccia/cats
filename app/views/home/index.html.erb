@@ -1,6 +1,35 @@
-akrghldkghjaldsfkjah
+<ul class="slideshow">
+	<li id="slide1">
+		<div id="next1" class="next_slide">
+			Draw me!
+		</div>
+	</li>
 
-<div id="slide1">
+	<li id="slide2">
+		<% form_tag '/upload', :multipart => true do %>
+			<%= file_field_tag "me" %>
+			<%= submit_tag "yeah, I like that one" %>
+		<% end -%>
+
+		file broswer
+		<div id="next2" class="next_slide">
+			Checkout with Paypal
+		</div>
+		<div id="prev2" class="next_slide">
+			<= Back
+		</div>
+	</li>
+
+	<li id="slide3">
+			Paypal login? However that works.
+		<div id="prev3" class="next_slide">
+			<= Back
+		</div>
+	</li>
+
+</ul>
+
+<!-- <div id="slide1">
 	This is slide 1.
 	<div id="next1">
 		Next.
@@ -22,4 +51,4 @@ akrghldkghjaldsfkjah
 	<div id="prev3">
 		Previous.
 	</div>
-</div>
+</div> -->
