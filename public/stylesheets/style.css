@@ -2,26 +2,41 @@ body{
 	font-family:helvetica, sans-serif;
 	width:500px;
 	margin: 0 auto;
-	background:black;
+	background:#333333;
 	text-align:center;
 	
 }
 
+/************** top section ****************/
 #cat {
 	width:500px;
-	height:500px;
-	background:red;
+	height:550px;
 	position: absolute;
+}
+
+#to_gallery {
+	margin:0px;
+	padding:0px;
+	width:25px;
+	height:85px;
+	top:433px;
+	left:476px;
+/*	border: solid 1px red;*/
+	display: block;
+	position:absolute;
 }
 
 #gallery {
 	width:500px;
-	height:500px;
-	background:purple;
+	height:550px;
+	background:#0cc0cc;
+/*	background:#33cc00;*/
 	color:white;
 	position: absolute;
 }
 
+
+/************** bottom section ****************/
 ul.slideshow {
 	margin:0px;
 	padding:0px;
@@ -32,59 +47,68 @@ ul.slideshow li {
 	padding:0px;
 	list-style:none;
 	width:200px;
-	height:200px;
-	background:#00f7ff;
+	height:150px;
+	background:#ffffff;
 	position: absolute;
 }
 
 .next_slide:hover {
 	cursor: pointer;
 }
+
+/**** slide 1 and its buttons ****/
 #slide1 {
 	width:500px;
-	height:200px;
-	background:#00f7ff;
+	height:150px;
+/*	background:#00f7ff;*/
 	position: absolute;
-	top:500px;
+	top:550px;
 }
 
 #next1 {
 	position: absolute;
-	top:100px;
-	left:200px;
+	top:45px;
+	left:205px;
 }
 
+/**** slide 2 and its buttons ****/
 #slide2 {
 	width:500px;
-	height:200px;
-	background:#de00ff;
+	height:150px;
+/*	background:#de00ff;*/
 	position: absolute;
-	top:500px;
-}
-
-#slide3 {
-	width:500px;
-	height:200px;
-	background:#fff000;
-	position: absolute;
-	top:500px;
-}
-
-
-#next2 {
-	position:absolute;
-	left:100px;
-	top:180px;
+	top:550px;
 }
 
 #prev2 {
 	position:absolute;
 	left:10px;
-	top:180px;
+	top:108px;
+}
+
+#next2 {
+	position:absolute;
+	left:431px;
+	top:108px;
+}
+
+/**** slide 3 and its buttons ****/
+#slide3 {
+	width:500px;
+	height:150px;
+/*	background:#fff000;*/
+	position: absolute;
+	top:550px;
 }
 
 #prev3 {
 	position:absolute;
 	left:10px;
-	top:180px;
+	top:108px;
+}
+
+#next3 {
+	position:absolute;
+	left:345px;
+	top:108px;
 }

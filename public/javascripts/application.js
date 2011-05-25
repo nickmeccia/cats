@@ -10,8 +10,8 @@ $(document).ready(function(){
 	});
 
 	$('#to_cat').click(function(){
-		$('#cat').show("slide", { direction: "right" }, 1000);
-		$('#gallery').hide("slide", { direction: "left" }, 1000);
+		$('#cat').show("slide", { direction: "left" }, 1000);
+		$('#gallery').hide("slide", { direction: "right" }, 1000);
 	});
 
 
