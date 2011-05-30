@@ -50,22 +50,16 @@ $(document).ready(function(){
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	$('#submit_button').click(function(){
-		$('#thumbnail').replaceWith('<img src="/system/photos/24/original/i-ntbqcpx-L.jpg?1306775839"/>');
+	$('#upload_form input').change(function(){
+		$(this).parent().ajaxSubmit({
+			beforeSubmit: function(a,f,o) {
+				o.dataType = 'json';
+			},
+			complete: function(XMLHttpRequest, textStatus) {
+				$('#thumbnail').html('<img src="' + XMLHttpRequest.responseText + '"/>');
+			},
+		});
 	});
-	
-	
-	
-	
-	
 	
 	
 });

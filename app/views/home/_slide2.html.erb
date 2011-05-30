@@ -1,16 +1,11 @@
-<%= form_tag '/upload', :multipart => true, :id => "upload_form" do %>
+<%= form_tag("/upload", :multipart => true, :remote => true, :id => "upload_form") do %>
 	<%= file_field_tag "file" %>
-	<%= submit_tag "godgpkdfig"%>
-	<div id="submit_button">
-		Select
-	</div>
 <% end -%>
 
 <div id="thumbnail">
 	
 </div>
 
-		
 <div id="prev2" class="next_slide">
 	<%= image_tag "back.png" %>
 </div>				
