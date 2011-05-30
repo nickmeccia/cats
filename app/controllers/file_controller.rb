@@ -1,8 +1,7 @@
 class FileController < ApplicationController
 
 def create
-  logger.info params.inspect
-  Person.create(:photo => params[:me])
+  Person.create(:photo => params[:file])
 end
 
 end

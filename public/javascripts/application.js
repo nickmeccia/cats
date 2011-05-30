@@ -43,4 +43,29 @@ $(document).ready(function(){
 		$('#slide3').hide("slide", { direction: "right" }, 1000);
 	});
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	$('#submit_button').click(function(){
+		$('#thumbnail').replaceWith('<img src="/system/photos/24/original/i-ntbqcpx-L.jpg?1306775839"/>');
+	});
+	
+	
+	
+	
+	
+	
+	
 });

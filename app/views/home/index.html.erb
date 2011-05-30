@@ -7,19 +7,7 @@
 	</li>
 
 	<li id="slide2">
-		<% form_tag '/upload', :multipart => true do %>
-			<%= file_field_tag "me" %>
-			<%= submit_tag "Select" %>
-		<% end -%>
-		
-
-				
-		<div id="prev2" class="next_slide">
-			<%= image_tag "back.png" %>
-		</div>				
-		<div id="next2" class="next_slide">
-			<%= image_tag "next.png" %>
-		</div>
+		<%= render :partial => "home/slide2"%>
 	</li>
 
 	<li id="slide3">
@@ -33,27 +21,3 @@
 	</li>
 
 </ul>
-
-<!-- <div id="slide1">
-	This is slide 1.
-	<div id="next1">
-		Next.
-	</div>
-</div>
-
-<div id="slide2">
-	This is slide 2.
-	<div id="next2">
-		Next.
-	</div>
-	<div id="prev2">
-		Previous.
-	</div>
-</div>
-
-<div id="slide3">
-	This is slide 3.
-	<div id="prev3">
-		Previous.
-	</div>
-</div> -->
