@@ -9,7 +9,7 @@ gem "pg"
 gem "jquery-rails"
 gem "paperclip", "~> 2.3"
 gem "activemerchant"
-
+gem 'heroku'
 
 # Use unicorn as the web server
 # gem 'unicorn'
