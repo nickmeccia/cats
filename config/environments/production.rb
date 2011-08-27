@@ -49,7 +49,7 @@ Cats::Application.configure do
   
   
   config.after_initialize do
-    ActiveMerchant::Billing::Base.mode = :productionr
+    ActiveMerchant::Billing::Base.mode = :test
     ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
       :login => "sell1_1311815277_biz_api1.gmail.com",
       :password => "1311815319",
