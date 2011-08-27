@@ -8,6 +8,8 @@ gem 'rails', '3.0.7'
 gem "pg"
 gem "jquery-rails"
 gem "paperclip", "~> 2.3"
+gem "activemerchant"
+
 
 # Use unicorn as the web server
 # gem 'unicorn'

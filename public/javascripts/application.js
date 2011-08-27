@@ -2,12 +2,12 @@
 // This file is automatically included by javascript_include_tag :defaults
 $(document).ready(function(){
 
-	$('#gallery').hide();
+	$('#gallery_content').hide();
 	
-	$('#to_gallery').click(function(){
-		$('#gallery').show("slide", { direction: "right" }, 1000);
-		$('#cat').hide("slide", { direction: "left" }, 1000);
-	});
+	// $('#to_gallery').click(function(){
+	// 	$('#gallery').show("slide", { direction: "right" }, 1000);
+	// 	$('#cat').hide("slide", { direction: "left" }, 1000);
+	// });
 
 	$('#to_cat').click(function(){
 		$('#cat').show("slide", { direction: "left" }, 1000);
@@ -16,7 +16,13 @@ $(document).ready(function(){
 
 
 
+	$('#to_gallery').click(function(){
+		$('#gallery_content').toggle("slide", { direction: "right	" }, 1000);
+	});
 
+
+
+// bottom section
 
 	$('#slide2').hide();
 	$('#slide3').hide();

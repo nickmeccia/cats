@@ -9,21 +9,25 @@
 <body>
 
 
+<div>
+	<div id="cat">
+		<%= image_tag "header.jpg" %>
+	</div>
 
-<div id="cat">
-	<%= image_tag "header.jpg" %>
-	<div id="to_gallery">
-		    <a id="clicker" href="#"></a>
+
+
+
+	<div id="gallery_wrapper">
+
+		<span id="to_gallery">
+			<%= image_tag "gallery.png" %>
+		</span>
+
+		<span id="gallery_content">
+			This is the gallery.
+		</span>
 	</div>
 </div>
-
-<div id="gallery">
-	This is the gallery.
-	<div id="to_cat">
-		back
-	</div>
-</div>
-
 
 
 <%= yield %>

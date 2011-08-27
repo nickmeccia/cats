@@ -46,4 +46,22 @@ Cats::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+  
+  
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :productionr
+    ::GATEWAY = ActiveMerchant::Billing::PaypalGateway.new(
+      :login => "sell1_1311815277_biz_api1.gmail.com",
+      :password => "1311815319",
+      :signature => "A-Tc9XBEVOm6L4nQ7vvndYDNFvrEAT4iwJuZ470Z6gDe6WArkKOfd9g3"
+    )
+  end
+  
+  
+  # Test Account:   sell1_1311815277_biz@gmail.com  Jul. 27, 2011 18:08:39 PDT
+  # API Username:   sell1_1311815277_biz_api1.gmail.com
+  # API Password:   1311815319
+  # Signature:  A-Tc9XBEVOm6L4nQ7vvndYDNFvrEAT4iwJuZ470Z6gDe6WArkKOfd9g3
+  
+  
 end

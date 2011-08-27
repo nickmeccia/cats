@@ -8,32 +8,45 @@ body{
 }
 
 /************** top section ****************/
-#cat {
+#main {
 	width:500px;
-	height:550px;
+	height:550px;	
+}
+
+#cat {
 	position: absolute;
+	border: dashed 3px blue;
 }
 
 #to_gallery {
+/*	float:left; */
+	position:absolute;
 	margin:0px;
 	padding:0px;
 	width:25px;
-	height:85px;
+	height:108px;
 	top:433px;
 	left:476px;
-/*	border: solid 1px red;*/
+	border: solid 1px red;
 	display: block;
-	position:absolute;
 }
 
-#gallery {
+#gallery_wrapper {
+	border: solid 1px purple;
 	width:500px;
 	height:550px;
-	background:#0cc0cc;
-/*	background:#33cc00;*/
-	color:white;
+/*	color:white;*/
 	position: absolute;
+/*	float: right;*/
 }
+
+#gallery_content {
+	float: right;
+	height: 550px;
+	width: 450px;
+	background:#0cc0cc;
+}
+
 
 
 /************** bottom section ****************/
@@ -111,4 +124,9 @@ ul.slideshow li {
 	position:absolute;
 	left:345px;
 	top:108px;
+}
+
+#orders {
+	position: absolute;
+	top: 570px;
 }
